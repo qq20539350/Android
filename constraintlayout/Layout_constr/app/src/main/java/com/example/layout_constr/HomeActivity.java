@@ -1,5 +1,6 @@
 package com.example.layout_constr;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -131,6 +132,10 @@ public class HomeActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     System.out.println("");
+                    if (position == 1) {
+                        Intent intent = new Intent(HomeActivity.this, TestConstraintLayout.class);
+                        startActivity(intent);
+                    }
                 }
             });
         }
